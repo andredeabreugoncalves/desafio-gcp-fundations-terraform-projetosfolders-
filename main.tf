@@ -1,5 +1,5 @@
 provider "google" {
-  project = "andre-devops-iac"
+  project = "andreag-devops-iac"
   region  = "us-central1"
   zone    = "us-central1-c"
   credentials = "${file("serviceaccount.yaml")}"
@@ -26,19 +26,19 @@ resource "google_folder" "Producao" {
 }
 
 
-resource "google_project" "andre-ag-dashboard-dev" {
-  name       = "dashboard-Dev"
-  project_id = "andre-ag-dashboard-dev"
+resource "google_project" "andre-ag-dashboard-desenv" {
+  name       = "dashboard-desenv"
+  project_id = "andre-ag-dashboard-desenv"
   folder_id  = google_folder.Desenvolvimento.name
   auto_create_network=false
-  billing_account = "01DC60-343BAE-7FBDB9"
+  billing_account = "0182FF-A624B0-34DBDF"
 
 }
 
- resource "google_project" "andre-ag-dashboard-prod" {
-   name       = "dashboard-Prod"
-   project_id = "andre-ag-dashboard-prod"
-   folder_id  = google_folder.Producao.name
-   auto_create_network=false
-   billing_account = "01DC60-343BAE-7FBDB9"
- }
+ #resource "google_project" "andre-ag-dashboard-producao" {
+ #  name       = "dashboard-Prod"
+ #  project_id = "andre-ag-dashboard-producao"
+ #  folder_id  = google_folder.Producao.name
+ #  auto_create_network=false
+ #  billing_account = "0182FF-A624B0-34DBDF"
+ #}
