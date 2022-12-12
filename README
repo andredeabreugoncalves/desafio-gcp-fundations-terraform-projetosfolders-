@@ -1,0 +1,13 @@
+API GCP > Criar Pastas
+==============================================
+habilitar API > Cloud Resource Manager API
+habilitar API > Cloud Billing API
+
+CONTA SERVIÇO
+============================================
+Criar conta 
+criar Chave > json
+
+PERMISSÃO AIM > 
+==============================================
+Adicionar permissão para conta de Serviço criada
