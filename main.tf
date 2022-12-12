@@ -35,10 +35,10 @@ resource "google_project" "andre-ag-dashboard-desenv" {
 
 }
 
- #resource "google_project" "andre-ag-dashboard-producao" {
- #  name       = "dashboard-Prod"
- #  project_id = "andre-ag-dashboard-producao"
- #  folder_id  = google_folder.Producao.name
- #  auto_create_network=false
- #  billing_account = "0182FF-A624B0-34DBDF"
- #}
+ resource "google_project" "andre-ag-dashboard-producao" {
+   name       = "dashboard-Prod"
+   project_id = "andre-ag-dashboard-producao"
+   folder_id  = google_folder.Producao.name
+   auto_create_network=false
+   billing_account = "0182FF-A624B0-34DBDF"
+ }
