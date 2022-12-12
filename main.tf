@@ -7,7 +7,7 @@ provider "google" {
 
 resource "google_folder" "estatisticas" {
   display_name = "estatisticas"
-  parent       = "organizations/149641525190"
+  parent       = "organizations/527043576009"
 }
 
 resource "google_folder" "dashboard" {
