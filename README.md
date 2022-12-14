@@ -1,5 +1,4 @@
-# desafio-gcp-fundations-terraform-projetosfolders-
-Lab GCP , criando folder via terraform
+# Curso - DIO - Lab GCP , criando folder via terraform
 
 API GCP > Criar Pastas
 ==============================================
